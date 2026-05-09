@@ -227,7 +227,7 @@ student-portal-api/
 │       ├── notFound.js        # 404 handler for undefined routes
 │       └── errorHandler.js    # Global error handler (4 parameters)
 │
-├── src/
+├── docs/
 │   ├── postman_collection.json    # Postman test collection
 │   
 └── node_modules/              # Dependencies (auto-generated)
