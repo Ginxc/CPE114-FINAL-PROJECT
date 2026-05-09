@@ -147,35 +147,35 @@ Sequelize will automatically create all tables on startup. You should see:
 ## Entity Relationship Diagram
 
 ```text
-┌─────────────────┐ ┌──────────────────┐ ┌─────────────────┐
-│ students │ │ enrollments │ │ subjects │
-├─────────────────┤ ├──────────────────┤ ├─────────────────┤
-│ id (PK) │◄───────│ studentId (FK) │ │ id (PK) │
-│ studentNumber │ │ subjectId (FK) │────────►│ subjectCode │
-│ firstName │ │ enrollmentDate │ │ subjectName │
-│ lastName │ │ grade │ │ description │
-│ email │ │ status │ │ units │
-│ phoneNumber │ │ createdAt │ │ schedule │
-│ enrollmentDate │ │ updatedAt │ │ room │
-│ createdAt │ └──────────────────┘ │ instructorId (FK)
-│ updatedAt │ │ createdAt │
-└─────────────────┘ │ updatedAt │
-└─────────────────┘
-│
-│
-┌─────▼─────┐
-│instructors│
-├───────────┤
-│ id (PK) │
-│ instructorNumber│
-│ firstName │
-│ lastName │
-│ email │
-│ department│
-│ hireDate │
-│ createdAt │
-│ updatedAt │
-└───────────┘
+┌─────────────────┐         ┌──────────────────┐         ┌─────────────────┐
+│    students     │         │   enrollments    │         │    subjects     │
+├─────────────────┤         ├──────────────────┤         ├─────────────────┤
+│ id (PK)         │◄───────│ studentId (FK)    │         │ id (PK)         │
+│ studentNumber   │         │ subjectId (FK)    │────────►│ subjectCode     │
+│ firstName       │         │ enrollmentDate   │         │ subjectName     │
+│ lastName        │         │ grade             │         │ description     │
+│ email           │         │ status            │         │ units           │
+│ phoneNumber     │         │ createdAt         │         │ schedule        │
+│ enrollmentDate  │         │ updatedAt         │         │ room            │
+│ createdAt       │         └──────────────────┘         │ instructorId (FK)
+│ updatedAt       │                                       │ createdAt       │
+└─────────────────┘                                       │ updatedAt       │
+                                                          └─────────────────┘
+                                                                   │
+                                                                   │
+                                                             ┌─────▼─────┐
+                                                             │instructors│
+                                                             ├───────────┤
+                                                             │ id (PK)   │
+                                                             │ instructorNumber│
+                                                             │ firstName │
+                                                             │ lastName  │
+                                                             │ email     │
+                                                             │ department│
+                                                             │ hireDate  │
+                                                             │ createdAt │
+                                                             │ updatedAt │
+                                                             └───────────┘
 ```
 
 
