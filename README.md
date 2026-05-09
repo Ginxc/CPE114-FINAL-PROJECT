@@ -196,7 +196,6 @@ student-portal-api/
 ├── .env.example               # Template for environment variables
 ├── .gitignore                 # Git ignore rules
 ├── README.md                  # API documentation
-├── postman_collection.json    # Postman test collection
 │
 ├── src/
 │   ├── app.js                 # Express app configuration
@@ -228,5 +227,8 @@ student-portal-api/
 │       ├── notFound.js        # 404 handler for undefined routes
 │       └── errorHandler.js    # Global error handler (4 parameters)
 │
+├── src/
+│   ├── postman_collection.json    # Postman test collection
+│   
 └── node_modules/              # Dependencies (auto-generated)
 ```
